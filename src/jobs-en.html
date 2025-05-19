@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Job offers page – Apply now!" />
+    <meta name="keywords" content="job, offers, career, application" />
+    <meta name="author" content="William Depetris" />
+    <title>Job Offers</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Job Offers</h1>
+        <nav>
+          <ul class="language-switch">
+            <li><a href="../index.html" lang="it">🇮🇹 Italian</a></li>
+            <li><a href="./jobs-en.html" lang="en">🇬🇧 English</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="job-listings" aria-labelledby="job-listings-title">
+        <h2 id="job-listings-title">Available Positions</h2>
+
+        <article>
+          <h3>Front-End Developer</h3>
+          <p>Description: Develop modern and responsive interfaces.</p>
+          <p>Requirements: HTML, CSS, JavaScript, React.</p>
+          <p>Deadline: <time datetime="2025-06-30">June 30, 2025</time></p>
+        </article>
+
+        <article>
+          <h3>Data Analyst</h3>
+          <p>Description: Analyze data to support business decisions.</p>
+          <p>Requirements: Python, SQL, Power BI.</p>
+          <p>Deadline: <time datetime="2025-06-15">June 15, 2025</time></p>
+        </article>
+
+        <article>
+          <h3>Marketing Manager</h3>
+          <p>Description: Manage digital marketing campaigns.</p>
+          <p>Requirements: SEO, SEM, Google Ads, CRM.</p>
+          <p>Deadline: <time datetime="2025-07-01">July 1, 2025</time></p>
+        </article>
+      </section>
+
+      <aside aria-labelledby="useful-info">
+        <h2 id="useful-info">Useful Information</h2>
+        <p>Check back regularly for new job offers!</p>
+      </aside>
+
+      <section id="application-form" aria-labelledby="application-form-title">
+        <h2 id="application-form-title">Apply Now</h2>
+        <form id="jobApplicationForm">
+          <div>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Smith"
+              required
+              aria-required="true"
+            />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@example.com"
+              required
+              aria-required="true"
+            />
+          </div>
+
+          <div>
+            <label for="position">Position of Interest:</label>
+            <select id="position" name="position" required aria-required="true">
+              <option value="">Select a job offer</option>
+              <option value="frontend">Front-End Developer</option>
+              <option value="data">Data Analyst</option>
+              <option value="marketing">Marketing Manager</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="cv">Upload Resume:</label>
+            <input
+              type="file"
+              id="cv"
+              name="cv"
+              accept=".pdf,.doc,.docx"
+              required
+              aria-required="true"
+              aria-describedby="cv-desc"
+            />
+            <small id="cv-desc">Accepted formats: PDF, DOC, DOCX</small>
+          </div>
+
+          <button type="submit">Submit Application</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <section class="footer-info">
+          <h2 class="visually-hidden">Site Information</h2>
+          <p>&copy; 2025 William Depetris. All rights reserved.</p>
+          <p>
+            <a href="mailto:info@esempio.com">Contact us</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="termini.html">Terms and Conditions</a>
+          </p>
+        </section>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Follow Us on Social Media</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/williamdepetris"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/esempio"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://facebook.com/esempio"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

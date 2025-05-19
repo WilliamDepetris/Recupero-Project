@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pagina delle offerte di lavoro - Candidati ora!"
+    />
+    <meta name="keywords" content="lavoro, offerte, carriera, candidatura" />
+    <meta name="author" content="William Depetris" />
+    <title>Offerte di Lavoro</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Offerte di Lavoro</h1>
+        <nav aria-label="Selettore lingua">
+          <ul class="language-switch">
+            <li>
+              <a href="../index.html" lang="it" hreflang="it">🇮🇹 Italiano</a>
+            </li>
+            <li>
+              <a href="./src/jobs-en.html" lang="en" hreflang="en"
+                >🇬🇧 English</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="annunci" aria-labelledby="annunci-titolo">
+        <h2 id="annunci-titolo">Annunci di lavoro</h2>
+
+        <article>
+          <h3>Sviluppatore Front-End</h3>
+          <p>
+            <strong>Descrizione:</strong> Sviluppo di interfacce moderne e
+            responsive.
+          </p>
+          <p><strong>Requisiti:</strong> HTML, CSS, JavaScript, React.</p>
+          <p>
+            <strong>Scadenza:</strong>
+            <time datetime="2025-06-30">30/06/2025</time>
+          </p>
+        </article>
+
+        <article>
+          <h3>Analista Dati</h3>
+          <p>
+            <strong>Descrizione:</strong> Analisi di dati per supportare
+            decisioni aziendali.
+          </p>
+          <p><strong>Requisiti:</strong> Python, SQL, Power BI.</p>
+          <p>
+            <strong>Scadenza:</strong>
+            <time datetime="2025-06-15">15/06/2025</time>
+          </p>
+        </article>
+
+        <article>
+          <h3>Responsabile Marketing</h3>
+          <p>
+            <strong>Descrizione:</strong> Gestione di campagne di marketing
+            digitale.
+          </p>
+          <p><strong>Requisiti:</strong> SEO, SEM, Google Ads, CRM.</p>
+          <p>
+            <strong>Scadenza:</strong>
+            <time datetime="2025-07-01">01/07/2025</time>
+          </p>
+        </article>
+      </section>
+
+      <aside aria-labelledby="info-utili">
+        <h2 id="info-utili">Informazioni utili</h2>
+        <p>Controlla spesso questa pagina per nuove opportunità di lavoro!</p>
+      </aside>
+
+      <section id="modulo" aria-labelledby="modulo-titolo">
+        <h2 id="modulo-titolo">Candidati ora</h2>
+        <form id="formCandidatura">
+          <div>
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Mario Rossi"
+              required
+              aria-required="true"
+            />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nome@esempio.com"
+              required
+              aria-required="true"
+            />
+          </div>
+
+          <div>
+            <label for="offerta">Offerta di interesse:</label>
+            <select id="offerta" name="offerta" required aria-required="true">
+              <option value="">Seleziona un'offerta</option>
+              <option value="frontend">Sviluppatore Front-End</option>
+              <option value="data">Analista Dati</option>
+              <option value="marketing">Responsabile Marketing</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="cv">Carica CV:</label>
+            <input
+              type="file"
+              id="cv"
+              name="cv"
+              accept=".pdf,.doc,.docx"
+              required
+              aria-required="true"
+              aria-describedby="cv-desc"
+            />
+            <small id="cv-desc">Formati accettati: PDF, DOC, DOCX</small>
+          </div>
+
+          <button type="submit">Invia candidatura</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <section class="footer-info">
+          <h2 class="visually-hidden">Informazioni sul sito</h2>
+          <p>&copy; 2025 William Depetris. Tutti i diritti riservati.</p>
+          <p>
+            <a href="info@esempio.com">Contattaci</a> |
+            <a href="privacy.html">Privacy</a> |
+            <a href="termini.html">Termini e condizioni</a>
+          </p>
+        </section>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Seguici sui social</h2>
+          <ul>
+            <li>
+              <a
+                href="https://fad.its-ictpiemonte.it/login/index.php"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://fad.its-ictpiemonte.it/login/index.php"
+                target="_blank"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://fad.its-ictpiemonte.it/login/index.php"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
